@@ -1,0 +1,15 @@
+﻿{
+  "name": "financial-screener",
+  "version": "1.0.0",
+  "description": "Simple screener for stocks, ETFs, indices and crypto",
+  "main": "server.js",
+  "scripts": {
+    "build": "node -e \"const fs=require('fs');fs.rmSync('build',{recursive:true,force:true});fs.cpSync('public','build',{recursive:true});console.log('Build klaar: public -> build');\"",
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "yahoo-finance2": "^2.13.3"
+  }
+}
